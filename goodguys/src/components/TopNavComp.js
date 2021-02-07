@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import DrawerToggleButton from "./SideDrawer/DrawerToggleButton";
 
 export default class TopNavComp extends Component {
     constructor(props) {
@@ -41,6 +42,10 @@ export default class TopNavComp extends Component {
                     "topNav--hidden": !this.state.visible
                 }, "topNav")}>
                     <div className="navsort">
+                    <div className="toolbartogglebutton">
+                        <DrawerToggleButton click={this.props.click}/>
+                    </div>   
+                    {/* <div className="spacer"></div>   */}
                         <p>Sign Up For Our Newsletter</p>
                         <p>Call (773)386-6868 </p>
                         <div><p>Schedule Now!</p></div>

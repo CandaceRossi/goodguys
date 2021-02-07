@@ -12,15 +12,39 @@ import WhyGoodGuys from "./components/WhyGoodGuys";
 import Data from "./components/Data.js";
 import CardCont from "./components/CardCont.js";
 import Card from "./components/Card.js";
-
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
 
 function App() {
   // const [dataitems] = useState(Data);
   // console.log("this is items data", dataitems)
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+  //toggle for side nav drawer
+  const drawerToggleClickHandler = () => {
+  setSideDrawerOpen((prevState) => {
+    // return {sideDrawerOpen: !prevState.sideDrawerOpen};
+     return setSideDrawerOpen(!prevState);
+    });
+  };
+//backdrop handler for shading window when side nav is popped open
+  const backdropClickHandler = () => {
+    // const myElement = document.getElementByClass("backdrop")
+    // myElement.click(myElement.css("display", "none"))
+    setSideDrawerOpen(false)
+// return {sideDrawerOpen: false};
+  };
+  //set backdrop to conditionally render with handler
+  let backdrop;
+  if (sideDrawerOpen) {
+    console.log("backdrop dropped")
+    backdrop = <Backdrop bdclick={backdropClickHandler} />;
+  }
   return (
     <div className="App">
+     <SideDrawer show={sideDrawerOpen} />
+      {backdrop}
      <div className="fixed-top">
-        <NavContainer />
+        <NavContainer drawerClickHandler={drawerToggleClickHandler}/>
        
       </div>
      {/* <div className="component-list"> */}

@@ -41,7 +41,7 @@ export default class NavContainer extends Component {
             <div className={classnames("navCont", {
                 "navCont--hidden": !this.state.visible
             })}>
-                <TopNavComp />
+                <TopNavComp click={this.props.drawerClickHandler}/>
                 <NavbarComp />
             </div>
         );
