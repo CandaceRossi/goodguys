@@ -1,6 +1,9 @@
 import React from "react";
 import CarouselComp from "./CarouselComp";
 import CardCont from "../components/CardCont";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 
 function Home() {
