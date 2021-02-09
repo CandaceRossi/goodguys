@@ -7,18 +7,20 @@ import "aos/dist/aos.css";
 function WhyGoodGuys() {
   return (
     <>
-    <div className="whygoodguys">
-      <div className="whygoodguyscont"></div>
-      <div className="whygoodguy-style"></div>
-      <div className="whygoodey" data-aos="zoom-in">
+    <div className="whygoodguyscont">
+      <div className="whygoodguys">
+      
+        <div className="whygoodguy-style">
+            <div className="whygoodey" data-aos="zoom-in">
                     <h1>Why GoodGuys, You Ask?</h1>
                     <h3>Because It's Time For A Fresh Room!</h3>
                     <h3>And We're Just The Right People For The Job!</h3>
 
                 </div>
-    </div>
+            </div>
+        </div>
           <div className="brickdownchitown">
- <div className="brickup" data-aos="fade-up">
+                <div className="brickup" data-aos="fade-up">
                         <div className="brickup1">
                             <h1>Why choose GoodGuys?</h1>
                             <div className="line"></div>
@@ -38,6 +40,7 @@ function WhyGoodGuys() {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             {/* <Parallax featuredImage1={commercialshed} featuredImage2={commercialclean} commpar={true} isNeeded = {false} />
 

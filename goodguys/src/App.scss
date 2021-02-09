@@ -848,10 +848,10 @@
         .contactcont {
             display: block;
             width: 100%;
-            height: 400px;
+            height: 600px;
             z-index: 300;
             opacity: 0.7;
-            background: tomato;
+            background-image: url("./images/contactus.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -862,26 +862,26 @@
                 flex-direction: column;
                 z-index: 400;
                 .contay {
-                    margin: 0px;
-                    margin-top: 5%;
-                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 12%;
+                    width: 100%;
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    border: 2px solid green;
                     h1,
                     h3 {
                         z-index: 500;
-                        font-size: 1.9rem;
+                        font-size: 2.2rem;
                         margin: 0 auto;
                         padding: 12px;
                         font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        color: black;
-                        text-shadow: 1px 1px black;
+                        font-weight: bolder;
+                        color: rgb(0, 172, 172);
+                        text-shadow: 2px 1px black;
                     }
                     h1 {
-                        font-size: 40px;
+                        font-size: 3.4rem;
                     }
                 }
             }
@@ -895,7 +895,7 @@
             justify-content: center;
             align-items: center;
             // opacity: 0.7;
-            background: linear-gradient( #54504a, rgb(138, 140, 141));
+            background: white;
             // img {
             //     width: 575px;
             //     height: 345px;
@@ -927,12 +927,12 @@
                         z-index: 500;
                         padding: 5px;
                     }
-                    .line {
-                        margin: 0 auto;
-                        width: 100px;
-                        height: 3px;
-                        border-top: 3px solid black;
-                    }
+                    // .line {
+                    //     margin: 0 auto;
+                    //     width: 100px;
+                    //     height: 3px;
+                    //     border-top: 3px solid black;
+                    // }
                 }
                 .bruckup {
                     color: black;
