@@ -15,15 +15,15 @@ const NavbarComp = () => {
       <Navbar>
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/Contact">Contact</Nav.Link>
-         <NavDropdown title="Cleaning Specialties" className="basic-nav-dropdown"
+         {/* <NavDropdown title="Cleaning Specialties" className="basic-nav-dropdown"
                     show={show}
                     onMouseEnter={showDropdown}
                     onMouseLeave={hideDropdown}>
                     <NavDropdown.Item className="droptop" href="/Thing1">Thing1</NavDropdown.Item>
                     <NavDropdown.Item className="droptop" href="/Thing2">Thing2</NavDropdown.Item>
                     <NavDropdown.Item className="droptop" href="/Thing3">Thing3</NavDropdown.Item>
-                </NavDropdown>
-        <NavDropdown title="Custom Carpet Services" className="basic-nav-dropdown"
+                </NavDropdown> */}
+        <NavDropdown title="Carpet Cleaning Services" className="basic-nav-dropdown"
                     show={show}
                     onMouseEnter={showDropdown}
                     onMouseLeave={hideDropdown}>
