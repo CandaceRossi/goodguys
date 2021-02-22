@@ -1,6 +1,6 @@
 import React from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 
 
@@ -9,27 +9,26 @@ function WhyGoodGuys() {
     <>
     <div className="whygoodguyscont">
       <div className="whygoodguys">
-      
         <div className="whygoodguy-style">
-            <div className="whygoodey" data-aos="zoom-in">
-                    <h1>Why GoodGuys, You Ask?</h1>
-                    <h3>Because It's Time For A Fresh Room!</h3>
-                    <h3>And We're Just The Right People For The Job!</h3>
+            <div className="whygoodey" >
+                    <h1>Why Choose GoodGuys?</h1>
+                    {/* <h3>Because It's Time For A Fresh Room!</h3>
+                    <h3>And We're Just The Right People For The Job!</h3> */}
 
                 </div>
             </div>
         </div>
           <div className="brickdownchitown">
-                <div className="brickup" data-aos="fade-up">
+                <div className="brickup">
                         <div className="brickup1">
                             <h1>Why choose GoodGuys?</h1>
                             <div className="line"></div>
                         </div>
-                        <div className="bruckup" data-aos="fade-up">
+                        <div className="bruckup">
                             <h3>Our cleaning and service capabilities are unmatched.</h3>
                           
                             <div className="contaflex">
-                              <p className="flexin" data-aos="fade-up"> GoodGuys is recognized as a leader in our industry and is highly 
+                              <p className="flexin"> GoodGuys is recognized as a leader in our industry and is highly 
                               recommended by design professionals who rely on our expertise for the cleaning
                                of installed carpet, Oriental and area rugs, upholstered furniture, stone 
                                and tile as well as the fabrication of custom carpet designs, edge treatments 
@@ -38,7 +37,11 @@ function WhyGoodGuys() {
                                 experienced service team, convenient scheduling, friendly service and kept 
                                 promises.  We keep our promises, with no surprises!</p>
                             </div>
+                           
                         </div>
+                         <div className="contafirst"></div>
+                          <div className="conta-eco"></div>
+                           <div className="contsavings"></div>
                     </div>
                 </div>
                 </div>
