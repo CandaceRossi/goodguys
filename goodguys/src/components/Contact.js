@@ -1,5 +1,8 @@
 import React, {useEffect} from "react";
 import Aos from "aos";
+import fbicon from "../images/fbicon.png"
+import instagramicon from "../images/instagramicon.png"
+import twittericon from "../images/twittericon.png"
 import "aos/dist/aos.css";
 
 
@@ -15,8 +18,8 @@ function Contact() {
       <div className="contact-style">
       <div className="contay" >
                     <h1>Contact Us Today For A Quote!</h1>
-                    <h3>GoodGuys Has Served Greater ChicagoLand</h3>
-                    <h3>Areas For Over 20 Years!</h3>
+                    {/* <h3>GoodGuys Has Served Greater ChicagoLand</h3>
+                    <h3>Areas For Over 20 Years!</h3> */}
 
                 </div>
             </div>
@@ -35,7 +38,18 @@ function Contact() {
                                 <div className="flexin" data-aos="fade-left">
                                     <p>Email: goodguys@goodguys.com</p>
                                 </div>
+                                 <div className="flexin">
+                                    <p>LET'S CONNECT!</p>
+                                </div>
+                                <div className="flexin">
+                                <div className="flexinmedia">
+                                   <img src={fbicon} alt="fb-social-media"/>
+                                   <img src={twittericon} alt="twitter-social-media"/>
+                                   <img src={instagramicon} alt="ig-social-media"/>
+                                    </div>
+                                </div>
                             </div>
+                            <div>
                             <h3>Please complete the information below and we'll promptly follow up with more detaile service information</h3>
                           
                            <div className="formcontainer">
@@ -89,6 +103,7 @@ function Contact() {
                             </form>
                         </div>
                             
+                        </div>
                         </div>
                         </div>
                     </div>
