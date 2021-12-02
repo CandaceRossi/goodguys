@@ -12,6 +12,10 @@ import WhyGoodGuys from "./components/WhyGoodGuys";
 import Data from "./components/Data.js";
 import CardCont from "./components/CardCont.js";
 import Card from "./components/Card.js";
+import AreaRugCleaning from "./components/AreaRugCleaning.js";
+import InstalledCarpetCleaning from "./components/InstalledCarpetCleaning.js";
+import FabricLeatherUpholstryCleaning from "./components/FabricLeatherUpholstryCleaning.js";
+import CarpetInstallation from "./components/CarpetInstallation.js";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
@@ -71,6 +75,10 @@ function App() {
                <Route exact path="/Contact" component={Contact} />
               <Route exact path="/CleaningSpecialties" component={CleaningSpecialties} />
               <Route exact path="/CustomCarpetServices" component={CustomCarpetServices} />
+              <Route exact path="/AreaRugCleaning" component={AreaRugCleaning} />
+              <Route exact path="/InstalledCarpetCleaning" component={InstalledCarpetCleaning} />
+              <Route exact path="/FabricLeatherUpholstryCleaning" component={FabricLeatherUpholstryCleaning} />
+              <Route exact path="/CarpetInstallation" component={CarpetInstallation} />
                <Route exact path="/WhyGoodGuys" component={WhyGoodGuys} />
                 <Route exact path="/Savings" component={Savings} />
                  <Route exact path="/Reviews" component={Reviews} /> 

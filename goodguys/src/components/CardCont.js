@@ -15,6 +15,7 @@ const CardCont = () => {
             <div className="item-card-container">
               <Link to={`/CardCont/${item.id}`}>
                 <img
+                style={{width: "250px", height: "250px"}}
                   className="item-card-image"
                   src={item.imageUrl}
                   alt={item.name}
