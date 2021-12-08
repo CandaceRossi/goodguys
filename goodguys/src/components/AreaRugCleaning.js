@@ -40,7 +40,7 @@ function AreaRugCleaning() {
             </div>  */}
 
             <div className="item-card-info">
-            <h2>Area Rug Cleaning</h2>
+            <h1>Area Rug Cleaning</h1>
               <h4>We offer in-home area rug cleaning service or try our convenient pick up and delivery services for area rug cleanings.  However you want to have it done, when your rugs become dirty or discolored, we have the appropriate non-abrasive cleaning solutions.</h4>
               <button
               
@@ -51,14 +51,14 @@ function AreaRugCleaning() {
             </div>
           </div>
         <div className="item-card-square">
-          <div className="item-card-container-save">
+          <div className="item-card-container-arearug">
             <img
                   className="item-card-image-square"
                  src={colorfulruglivingroom} alt=""
                 />
             </div>
-            <div className="item-card-info">
-            </div>
+            {/* <div className="item-card-info">
+            </div> */}
           </div>
         </div>                    
       </div>
@@ -78,7 +78,7 @@ function AreaRugCleaning() {
        <div className="items-list-wrapper-arearug">
       <div className="arearugendcont">
                    
-       <img src={arearug3} className="arearugleftp2" />
+       <img src={arearug3} alt ="" className="arearugleftp2" />
        <div>
        <h2>Receive a 20% discount when you purchase a monthly pickup and delivery cleaning service for your area rugs.</h2>
        <p>For questions or to schedule an appointment, call (206) 782-2268 or use our online scheduling form to request an appointment.</p>

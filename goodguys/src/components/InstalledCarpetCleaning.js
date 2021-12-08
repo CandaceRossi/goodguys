@@ -25,23 +25,28 @@ function InstalledCarpetCleaning() {
             <div className="brickup1">
               <h1>Year-Round Savings</h1>
             </div>
+           
             <div className="bruckup">
                 <div className="contaflex">
-                  <div className="items-list-wrapper-save">
+                  <div className="items-list-wrapper-installedcarpet1">
                     <div className="itemdiv">
-                      <p>We're committed to keeping down the cost of "Keeping Up Appearances."</p></div>
+                      <p>"We're committed to keeping down the cost of "Keeping Up Appearances."</p></div>
                     <div className="item-card-square" >
-            <div className="item-card-container-save">
+             {/* <div className="item-card-container-save">
               
-                <img
+                 <img
                   className="item-card-image-square"
                   src={couplecarpetstairs} alt=""
-                />
+                /> 
+              
              
-            </div>
+            </div>  */}
 
             <div className="item-card-info">
-              <p>Bring your area rugs and upholstered furniture to us for service and receive a 20% discount.  This offer is available at both our Seattle and Bellevue locations.</p>
+            <h1>Installed Carpet Cleaning</h1>
+              <h4>Wool or synthetic, woven or tufted, our experienced cleaning technicians know how to restore your carpet’s appearance – and provide you a healthier indoor environment.  You’ll like our attention to detail and find our service easy and convenient.
+
+</h4>
               <button
               
                 className="md-button shop-button"
@@ -51,36 +56,47 @@ function InstalledCarpetCleaning() {
             </div>
           </div>
         <div className="item-card-square">
-          <div className="item-card-container-save">
+          <div className="item-card-container-installedcarpet">
             <img
                   className="item-card-image-square"
                  src={colorfulruglivingroom} alt=""
                 />
             </div>
-            <div className="item-card-info">
-              <p>Our experienced cleaning technicians are happy to work around your furnishings and only clean the carpet traffic areas that need attention. As the need for furniture moving is reduced, we pass the savings along to you.</p>
-              <p>Enjoy your enhanced carpet appearance and a healthier indoor environment.</p>
-              <button
-              
-                className="md-button shop-button"
-              >
-               Get Great Savings!
-              </button>
-            </div>
+            {/* <div className="item-card-info">
+            </div> */}
           </div>
         </div>                    
       </div>
     </div>
+
+ <div className="brickup1">
+          <div className="installedcarpetendhome">
+    <h1>
+    <span className="installedcarpetendhomequote">"</span>
+    Good guys know how to do the job! But of course that's what they're known for.</h1>
+    <h1>
+    <span className="installedcarpetendhomequote">"</span>
+    Walked into the house and the cleaned rug was breathtaking! Looked as new as the day we bought it!</h1>
+    </div>
+            </div>
+
+       <div className="items-list-wrapper-installedcarpet">
       <div className="installedcarpetendcont">
-       <p className="installedcarpetleftp">SPECIAL OFFER</p>
-       <div><h1>Special Offer</h1>
-       <p>Special savings for our valued clients</p>
-       <li><ul>$40 off <br/> <span>orders over $275</span></ul>
-       <ul>$85 off <br/> <span>orders over $500</span></ul>
-       <ul>$200 off <br/> <span>orders over $1,000</span></ul></li></div>
-      </div>           
+                   
+       <img src={couplecarpetstairs} style={{width: "275px", height: "275px", borderRadius: "50%"}} alt="" className="installedcarpetleftp2" />
+       <div>
+       <h2>Receive a 20% discount when you purchase a monthly pickup and delivery cleaning service for your area rugs.</h2>
+       <p>For questions or to schedule an appointment, call (206) 782-2268 or use our online scheduling form to request an appointment.</p>
+       <li><ul>Schedule Now</ul>
+       <ul>Why GoodGuys?</ul>
+       </li></div>
+      </div>   
+      </div>        
   </div>
   </div>
+
+
+  
   <div className="installedcarpetfamilyimg">
   <div className="installedcarpetfamilyimgimg"> 
   <div className="encasingright">
