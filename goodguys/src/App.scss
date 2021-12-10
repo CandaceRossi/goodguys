@@ -140,35 +140,48 @@ body {
     flex: 1;
 }
 
-.toolbartogglebutton {
-    background: black !important;
-    top: 0;
-    left: 0;
+@media (min-width: 735px) {
+    .toolbartogglebutton {
+        z-index: 0;
+        display: none !important;
+    }
 }
 
-.togglebutton {
-    display: flex;
-    flex-direction: column !important;
-    justify-content: space-around;
-    height: 24px;
-    width: 30px !important;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.togglebutton:focus {
-    outline: none;
-}
-
-.togglebutton__line {
-    width: 30px !important;
-    height: 4px !important;
-    background: white;
-    color: white !important;
-    // border: 1px solid red;
+@media (max-width: 736px) {
+    .toolbartogglebutton {
+        background: white;
+        margin: 0px;
+        width: 30px !important;
+    }
+    .togglebutton {
+        margin-top: 40%;
+        margin-left: 35px;
+        // margin-right: -25px;
+        // margin-bottom: 25px;
+        // margin-top: 90%;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around;
+        height: 24px;
+        width: 30px !important;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .togglebutton:focus {
+        outline: none;
+    }
+    .togglebutton__line {
+        z-index: 999 !important;
+        width: 30px !important;
+        height: 4px !important;
+        background: rgb(0, 172, 172) !important;
+        // color: white !important;
+        // border: 1px solid red;
+    }
 }
 
 // @media (max-width: 768px) {
@@ -186,31 +199,70 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 50px;
-    background: black;
+    background: rgb(0, 172, 172);
     top: 0;
     z-index: 999;
     transition: top 0.6s;
     .navsort {
         width: 100%;
-        height: 135px;
+        height: 50px;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: flex-end;
         margin: 0 auto;
+        background: rgb(0, 172, 172);
+        .snortnav {
+            // display: flex;
+            position: relative !important;
+            z-index: 999 !important;
+            // flex-direction: column !important;
+            // justify-content: space-around;
+            height: auto;
+            width: 300px !important;
+            background: transparent;
+            // border: none;
+            cursor: pointer;
+            padding: 0px;
+            box-sizing: border-box;
+            // background: rgb(0, 172, 172);
+            .logoimg {
+                display: absolute;
+                transition: top 0.3s ease !important;
+                width: 218px;
+                z-index: 999px !important;
+                height: 108px;
+                background: transparent !important;
+                // display: flex !important;
+                // justify-content: flex-start !important;
+                margin: 0 auto !important;
+                // margin-left: 65px !important;
+                padding: 0px !important;
+                margin-top: 65px !important;
+                margin-left: 60px !important;
+                // margin-top: 50px !important;
+            }
+        }
         p {
-            margin: 0 15px;
-            padding: 8px;
+            margin: 0 auto;
+            height: 50px;
+            padding: 8px 20px 8px 20px;
             color: #d6cec3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: 'Montserrat', sans-serif;
+            background: black;
         }
         div {
-            width: 175px;
-            background: rgb(0, 172, 172);
+            z-index: 999 !important;
+            width: 175px !important;
+            background: rgb(0, 172, 172) !important;
             height: 50px;
             p {
                 margin: 0 auto;
                 color: whitesmoke;
                 font-size: 1.2rem;
+                background: rgb(0, 172, 172) !important;
                 font-family: 'Montserrat', sans-serif;
             }
         }
@@ -255,26 +307,55 @@ body {
 // }
 .topNav--hidden {
     margin: 0 auto;
-    top: -55px;
+    top: -55px !important;
     padding-top: 55px;
-    transition: top 0.6s;
-    z-index: 999;
+    transition: top 0.6s ease;
+    z-index: 998;
     .navsort {
-        // width: 75%;
-        // height: 135px;
-        // display: flex;
-        // align-items: flex-end;
-        // justify-content: space-around;
-        // transition: all 0.4s ease !important;
-        display: none;
+        position: relative;
+        top: -55px !important;
+    }
+    .snortnav {
+        z-index: 999 !important;
+        height: auto;
+        width: 300px !important;
+        background: transparent;
+        cursor: pointer;
+        padding: 0px;
+        margin-top: 60px;
+        margin-left: 60px;
+        position: relative !important;
+        box-sizing: border-box;
+        .logoimg {
+            display: flex !important;
+            align-items: baseline !important;
+            z-index: 999 !important;
+            display: block !important;
+            position: relative !important;
+            transition: top 0.3s ease !important;
+            width: 115px !important;
+            height: 60px !important;
+            background: transparent !important;
+            margin: 0 auto !important;
+            padding: 0px !important;
+            margin-top: 160px !important;
+            margin-left: 60px !important;
+        }
     }
 }
 
 .nav {
-    z-index: 999;
+    top: 135;
+    z-index: 998;
+    width: 100%;
+    height: 65px;
+    background: whitesmoke;
+    display: flex;
+    // justify-content: flex-start !important;
+    align-items: baseline !important;
     .navbar {
         top: 135;
-        z-index: 999;
+        z-index: 998;
         width: 100%;
         height: 65px;
         background: whitesmoke;
@@ -329,13 +410,12 @@ body {
     .nav {
         width: 100%;
         height: auto;
-        z-index: 999;
+        z-index: 998;
     }
     .navbar {
-        z-index: 999;
+        z-index: 998;
         width: 100%;
         height: 65px;
-        background: #54504a;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -375,8 +455,14 @@ body {
 
 /* phone */
 
-@media (max-width: 500px) {
+// @media (max-width: 500px) {
+//     .nav {
+//         display: none !important;
+//     }
+// }
+@media (max-width: 736px) {
     .nav {
+        z-index: 0;
         display: none !important;
     }
 }
@@ -389,7 +475,7 @@ body {
     position: fixed;
     //  display: flex;
     //  flex-direction: column;
-    z-index: 999;
+    z-index: 998;
     top: 0;
     transition: top 0.6s;
 }
@@ -398,7 +484,7 @@ body {
     .navCont {
         width: 100%;
         height: auto !important;
-        z-index: 999;
+        z-index: 998;
     }
 }
 
@@ -409,13 +495,13 @@ body {
     .navCont {
         width: 100%;
         height: auto;
-        z-index: 999;
+        z-index: 998;
     }
 }
 
 .navCont--hidden {
     top: -55px;
-    z-index: 999;
+    z-index: 998;
 }
 
 .comp-list-home {
@@ -670,6 +756,23 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     width: 75vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 35px;
+}
+
+.items-list-wrapper-arearug {
+    background: whitesmoke;
+    position: relative;
+    z-index: 600 !important;
+    margin: 0 auto;
+    // margin-top: -550px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -1064,7 +1167,7 @@ p {
         width: 100%;
         height: 600px;
         z-index: 300;
-        background-image: url("./images/contactus.jpg");
+        background-image: url("./images/contactus2.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -1089,8 +1192,8 @@ p {
                     margin: 0 auto;
                     padding: 12px;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    color: rgb(0, 172, 172);
-                    text-shadow: 3px 1px black;
+                    color: black;
+                    text-shadow: 3px 1px white;
                     font-family: 'Montserrat', sans-serif;
                 }
                 h1 {
@@ -1136,7 +1239,7 @@ p {
                     display: flex;
                     justify-content: center;
                     font-size: 50px;
-                    color: black;
+                    color: rgb(0, 172, 172);
                     z-index: 500;
                     padding: 5px;
                     font-family: 'Montserrat', sans-serif;
@@ -1149,6 +1252,7 @@ p {
                 // }
             }
             .bruckup {
+                padding-top: 70px;
                 margin: 0 auto;
                 color: black;
                 width: 100%;
@@ -1158,8 +1262,9 @@ p {
                 justify-content: space-between;
                 .contaflex {
                     height: auto;
+                    width: 40%;
                     display: flex;
-                    width: 440px;
+                    // width: 440px;
                     margin: 0 auto;
                     padding-top: 20px;
                     flex-direction: column;
@@ -1172,7 +1277,7 @@ p {
                         p {
                             display: flex;
                             justify-content: center;
-                            font-size: 2.2rem;
+                            font-size: 2rem;
                             width: 730px;
                             margin: 0 auto;
                             font-family: 'Montserrat', sans-serif;
@@ -1201,65 +1306,86 @@ p {
             color: rgb(44, 52, 88);
             font-family: 'Montserrat', sans-serif;
         }
-        .row,
-        .col {
-            background-color: white;
-        }
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-        }
-        label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-        }
-        input[type=submit] {
-            background-color: rgb(0, 172, 172);
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-            margin-top: -30px;
-        }
-        input[type=submit]:hover {
-            background-color: rgb(49, 67, 153);
-        }
-        .formcontainer {
-            width: 925px;
-            border-radius: 5px;
-            background-color: #f2f2f2;
+        .contbottom {
+            width: 60%;
             margin: 0 auto;
-        }
-        .col-25 {
-            float: left !important;
-            width: 25%;
-            margin-top: 6px;
-        }
-        .col-75 {
-            float: left !important;
-            width: 75%;
-            margin-top: 6px;
-        }
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table !important;
-            clear: both;
-        }
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .col-25,
-            .col-75,
-            input[type=submit] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // display: flex;
+            // justify-content: flex-start;
+            h3 {
+                margin: 0 auto;
+                width: 75%;
+                // display: flex !important;
+                // justify-content: flex-end !important;
+                padding-bottom: 20px;
+                z-index: 500;
+                color: rgb(44, 52, 88);
+                font-family: 'Montserrat', sans-serif;
+            }
+            .row,
+            .col {
+                background-color: white;
+            }
+            input[type=text],
+            select,
+            textarea {
                 width: 100%;
-                margin-top: 0;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                font-size: 1.6rem !important;
+            }
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+                font-size: 1.6rem !important;
+            }
+            input[type=submit] {
+                background-color: rgb(0, 172, 172);
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+                margin-top: -30px;
+            }
+            input[type=submit]:hover {
+                background-color: rgb(49, 67, 153);
+            }
+            .formcontainer {
+                width: 925px;
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                margin: 0 auto;
+            }
+            .col-25 {
+                float: left !important;
+                width: 25%;
+                margin-top: 6px;
+            }
+            .col-75 {
+                float: left !important;
+                width: 75%;
+                margin-top: 6px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table !important;
+                clear: both;
+            }
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .col-25,
+                .col-75,
+                input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -1304,8 +1430,8 @@ p {
                     padding: 12px;
                     font-family: 'Montserrat', sans-serif;
                     // font-weight: bolder;
-                    color: white;
-                    text-shadow: 2px 1px black;
+                    color: black;
+                    text-shadow: 3px 1px white;
                 }
             }
         }
@@ -1930,6 +2056,1171 @@ p {
                 font-family: 'Montserrat', sans-serif;
             }
             //     }
+        }
+    }
+}
+
+.arearug {
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    .arearugcont {
+        display: block;
+        width: 100%;
+        height: 600px;
+        z-index: 300;
+        background-image: url("./images/arearug2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 145%;
+        background-size: cover;
+        .arearug-style {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .arearugey {
+                margin: 0 auto;
+                margin-top: 15%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1,
+                h3 {
+                    z-index: 500;
+                    font-size: 2.5rem;
+                    margin: 0 auto;
+                    padding: 12px;
+                    font-family: 'Montserrat', sans-serif;
+                    // font-weight: bolder;
+                    color: white;
+                    text-shadow: 3px 1px black;
+                }
+                h1 {
+                    font-size: 3.7rem;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 300 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0.7;
+        background: white;
+        // img {
+        //     width: 575px;
+        //     height: 345px;
+        //     margin: -2px 0px 0px 175px;
+        //     // z-index: 600;
+        // }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0px auto;
+                width: 100%;
+                height: 70%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    color: black;
+                    z-index: 500;
+                    padding: 5px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .arearugendhome {
+                    width: 100%;
+                    height: 300px;
+                    background: white;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: center;
+                    // flex-direction: column;
+                    h1 {
+                        width: 35%;
+                        font-size: 1.4rem;
+                        color: rgb(48, 47, 47);
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .arearugendhomequote {
+                        height: 100%;
+                        max-width: 55%;
+                        display: flex;
+                        align-content: flex-start;
+                        font-size: 2.6rem;
+                        font-family: 'Montserrat', sans-serif;
+                        // font-style: 
+                    }
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto;
+            color: black;
+            width: 100%;
+            height: auto;
+            padding-bottom: 0px;
+            display: flex;
+            justify-content: space-between;
+            .contaflex {
+                height: auto;
+                display: flex;
+                // width: 440px;
+                margin: 0 auto;
+                padding-top: 20px;
+                flex-direction: column;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                // align-items: baseline;
+                .items-list-wrapper-arearu1 {
+                    background: whitesmoke;
+                    position: relative;
+                    z-index: 600 !important;
+                    margin: 0 auto;
+                    // padding-left: 25px;
+                    // padding-right: 25px;
+                    width: 75vw;
+                    // height: auto !important;
+                    height: 650px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-top: 75px;
+                    // padding-bottom: 35px;
+                    .item-card-square {
+                        background: whitesmoke;
+                        width: 360px;
+                        height: 350px;
+                        margin: 75px;
+                        margin-top: 5px;
+                        .item-card-info {
+                            width: 100%;
+                            // height: 350px;
+                            h1 {
+                                color: rgba(0, 172, 172, 0.658);
+                            }
+                            h4 {
+                                font-weight: lighter !important;
+                            }
+                        }
+                        .item-card-container-arearug {
+                            height: 350px;
+                            img {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            box-sizing: border-box !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center !important;
+            padding-bottom: 20px;
+            z-index: 500;
+            color: rgb(44, 52, 88);
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.arearugendcont {
+    margin: 0 auto;
+    width: 65%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    // padding: 20px;
+    margin-bottom: 45px;
+    .arearugleftp2 {
+        margin: 0px;
+        border-radius: 50%;
+        padding: 0px;
+        width: 275px !important;
+        height: 275px !important;
+    }
+    div {
+        width: 60%;
+        padding: 25px;
+        h2 {
+            margin: 0px;
+            display: flex;
+            // justify-content: flex-start !important;
+            align-items: flex-start;
+            font-weight: lighter;
+        }
+        p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+        li {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            ul {
+                // border-radius: 7px;
+                color: white;
+                background: rgb(0, 172, 172);
+                height: auto;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                margin: 20px;
+                font-size: 1.4rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+            ul:first-of-type {
+                color: rgb(0, 172, 172) !important;
+                background: white !important;
+                border: 1.4px solid black;
+            }
+        }
+    }
+}
+
+.arearugfamilyimg {
+    width: 75%;
+    height: 650px;
+    // overflow: hidden;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    .arearugfamilyimgimg {
+        width: 100%;
+        height: auto;
+        background-image: url("./images/familyroom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 80%;
+        .encasingright {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 25px;
+            li {
+                z-index: 899!important;
+                width: 450px;
+                max-height: auto;
+                height: 650px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 172, 172, 0.658);
+                ul {
+                    color: white;
+                    font-size: 1.3rem;
+                    width: 200px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+///////////
+.installedcarpet {
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    .installedcarpetcont {
+        display: block;
+        width: 100%;
+        height: 600px;
+        z-index: 300;
+        background-image: url("./images/installedcarpet.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 145%;
+        background-size: cover;
+        .installedcarpet-style {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .installedcarpetey {
+                margin: 0 auto;
+                margin-top: 15%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1,
+                h3 {
+                    z-index: 500;
+                    font-size: 2.5rem;
+                    margin: 0 auto;
+                    padding: 12px;
+                    font-family: 'Montserrat', sans-serif;
+                    // font-weight: bolder;
+                    color: white;
+                    text-shadow: 3px 1px black;
+                }
+                h1 {
+                    font-size: 3.7rem;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 300 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0.7;
+        background: white;
+        // img {
+        //     width: 575px;
+        //     height: 345px;
+        //     margin: -2px 0px 0px 175px;
+        //     // z-index: 600;
+        // }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0px auto;
+                width: 100%;
+                height: 70%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    color: black;
+                    z-index: 500;
+                    padding: 5px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .installedcarpetendhome {
+                    width: 100%;
+                    height: 300px;
+                    background: white;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: center;
+                    // flex-direction: column;
+                    h1 {
+                        width: 35%;
+                        font-size: 1.4rem;
+                        color: rgb(48, 47, 47);
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .installedcarpetendhomequote {
+                        height: 100%;
+                        max-width: 55%;
+                        display: flex;
+                        align-content: flex-start;
+                        font-size: 2.6rem;
+                        font-family: 'Montserrat', sans-serif;
+                        // font-style: 
+                    }
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto;
+            color: black;
+            width: 100%;
+            height: auto;
+            padding-bottom: 0px;
+            display: flex;
+            justify-content: space-between;
+            .contaflex {
+                height: auto;
+                display: flex;
+                // width: 440px;
+                margin: 0 auto;
+                padding-top: 20px;
+                flex-direction: column;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                // align-items: baseline;
+                .items-list-wrapper-installedcarpet1 {
+                    background: whitesmoke;
+                    position: relative;
+                    z-index: 600 !important;
+                    margin: 0 auto;
+                    // padding-left: 25px;
+                    // padding-right: 25px;
+                    width: 75vw;
+                    // height: auto !important;
+                    height: 650px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-top: 75px;
+                    // padding-bottom: 35px;
+                    .item-card-square {
+                        background: whitesmoke;
+                        width: 360px;
+                        height: 350px;
+                        margin: 75px;
+                        margin-top: 5px;
+                        .item-card-info {
+                            width: 100%;
+                            // height: 350px;
+                            h1 {
+                                color: rgba(0, 172, 172, 0.658);
+                            }
+                            h4 {
+                                font-weight: lighter !important;
+                            }
+                        }
+                        .item-card-container-installedcarpet {
+                            height: 350px;
+                            img {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            box-sizing: border-box !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center !important;
+            padding-bottom: 20px;
+            z-index: 500;
+            color: rgb(44, 52, 88);
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.installedcarpetendcont {
+    margin: 0 auto;
+    width: 65%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 45px;
+    .installedcarpetleftp {
+        border: 1px solid red !important;
+        margin: 0px;
+        border-radius: 50% !important;
+        padding: 0px;
+        width: 275px !important;
+        height: 275px !important;
+    }
+    div {
+        width: 60%;
+        padding: 25px;
+        h2 {
+            margin: 0px;
+            display: flex;
+            // justify-content: flex-start !important;
+            align-items: flex-start;
+            font-weight: lighter;
+        }
+        p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+        li {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            ul {
+                // border-radius: 7px;
+                color: white;
+                background: rgb(0, 172, 172);
+                height: auto;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                margin: 20px;
+                font-size: 1.4rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+            ul:first-of-type {
+                color: rgb(0, 172, 172) !important;
+                background: white !important;
+                border: 1.4px solid black;
+            }
+        }
+    }
+}
+
+.installedcarpetfamilyimg {
+    width: 75%;
+    height: 650px;
+    // overflow: hidden;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    .installedcarpetfamilyimgimg {
+        width: 100%;
+        height: auto;
+        background-image: url("./images/familyroom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 80%;
+        .encasingright {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 25px;
+            li {
+                z-index: 899!important;
+                width: 450px;
+                max-height: auto;
+                height: 650px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 172, 172, 0.658);
+                ul {
+                    color: white;
+                    font-size: 1.3rem;
+                    width: 200px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+///////////////////////
+.fabricleather {
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    .fabricleathercont {
+        display: block;
+        width: 100%;
+        height: 600px;
+        z-index: 300;
+        background-image: url("./images/fabricleather.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 145%;
+        background-size: cover;
+        .fabricleather-style {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .fabricleatherey {
+                margin: 0 auto;
+                margin-top: 15%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1,
+                h3 {
+                    z-index: 500;
+                    font-size: 2.5rem;
+                    margin: 0 auto;
+                    padding: 12px;
+                    font-family: 'Montserrat', sans-serif;
+                    // font-weight: bolder;
+                    color: white;
+                    text-shadow: 3px 1px black;
+                }
+                h1 {
+                    font-size: 3.7rem;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 300 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0.7;
+        background: white;
+        // img {
+        //     width: 575px;
+        //     height: 345px;
+        //     margin: -2px 0px 0px 175px;
+        //     // z-index: 600;
+        // }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0px auto;
+                width: 100%;
+                height: 70%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    color: black;
+                    z-index: 500;
+                    padding: 5px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .fabricleatherendhome {
+                    width: 100%;
+                    height: 300px;
+                    background: white;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: center;
+                    // flex-direction: column;
+                    h1 {
+                        width: 35%;
+                        font-size: 1.4rem;
+                        color: rgb(48, 47, 47);
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .fabricleatherendhomequote {
+                        height: 100%;
+                        max-width: 55%;
+                        display: flex;
+                        align-content: flex-start;
+                        font-size: 2.6rem;
+                        font-family: 'Montserrat', sans-serif;
+                        // font-style: 
+                    }
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto;
+            color: black;
+            width: 100%;
+            height: auto;
+            padding-bottom: 0px;
+            display: flex;
+            justify-content: space-between;
+            .contaflex {
+                height: auto;
+                display: flex;
+                // width: 440px;
+                margin: 0 auto;
+                padding-top: 20px;
+                flex-direction: column;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                // align-items: baseline;
+                .items-list-wrapper-fabricleather1 {
+                    background: whitesmoke;
+                    position: relative;
+                    z-index: 600 !important;
+                    margin: 0 auto;
+                    // padding-left: 25px;
+                    // padding-right: 25px;
+                    width: 75vw;
+                    // height: auto !important;
+                    height: 650px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-top: 75px;
+                    // padding-bottom: 35px;
+                    .item-card-square {
+                        background: whitesmoke;
+                        width: 360px;
+                        height: 350px;
+                        margin: 75px;
+                        margin-top: 5px;
+                        .item-card-info {
+                            width: 100%;
+                            // height: 350px;
+                            h1 {
+                                color: rgba(0, 172, 172, 0.658);
+                            }
+                            h4 {
+                                font-weight: lighter !important;
+                            }
+                        }
+                        .item-card-container-fabricleather {
+                            height: 350px;
+                            img {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            box-sizing: border-box !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center !important;
+            padding-bottom: 20px;
+            z-index: 500;
+            color: rgb(44, 52, 88);
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.fabricleatherendcont {
+    margin: 0 auto;
+    width: 65%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 45px;
+    .fabricleatherleftp {
+        border: 1px solid red !important;
+        margin: 0px;
+        border-radius: 50% !important;
+        padding: 0px;
+        width: 275px !important;
+        height: 275px !important;
+    }
+    div {
+        width: 60%;
+        padding: 25px;
+        h2 {
+            margin: 0px;
+            display: flex;
+            // justify-content: flex-start !important;
+            align-items: flex-start;
+            font-weight: lighter;
+        }
+        p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+        li {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            ul {
+                // border-radius: 7px;
+                color: white;
+                background: rgb(0, 172, 172);
+                height: auto;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                margin: 20px;
+                font-size: 1.4rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+            ul:first-of-type {
+                color: rgb(0, 172, 172) !important;
+                background: white !important;
+                border: 1.4px solid black;
+            }
+        }
+    }
+}
+
+.fabricleatherfamilyimg {
+    width: 75%;
+    height: 650px;
+    // overflow: hidden;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    .fabricleatherfamilyimgimg {
+        width: 100%;
+        height: auto;
+        background-image: url("./images/familyroom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 80%;
+        .encasingright {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 25px;
+            li {
+                z-index: 899!important;
+                width: 450px;
+                max-height: auto;
+                height: 650px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 172, 172, 0.658);
+                ul {
+                    color: white;
+                    font-size: 1.3rem;
+                    width: 200px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+///
+.carpetinstallation {
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    .carpetinstallationcont {
+        display: block;
+        width: 100%;
+        height: 600px;
+        z-index: 300;
+        background-image: url("./images/carpetinstallation.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 145%;
+        background-size: cover;
+        .carpetinstallation-style {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 400;
+            .carpetinstallationey {
+                margin: 0 auto;
+                margin-top: 15%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1,
+                h3 {
+                    z-index: 500;
+                    font-size: 2.5rem;
+                    margin: 0 auto;
+                    padding: 12px;
+                    font-family: 'Montserrat', sans-serif;
+                    // font-weight: bolder;
+                    color: white;
+                    text-shadow: 3px 1px black;
+                }
+                h1 {
+                    font-size: 3.7rem;
+                }
+            }
+        }
+    }
+    .brickdownchitown {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 300 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0.7;
+        background: white;
+        // img {
+        //     width: 575px;
+        //     height: 345px;
+        //     margin: -2px 0px 0px 175px;
+        //     // z-index: 600;
+        // }
+        .brickup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            .brickup1 {
+                margin: 0px auto;
+                width: 100%;
+                height: 70%;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    color: black;
+                    z-index: 500;
+                    padding: 5px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .carpetinstallationendhome {
+                    width: 100%;
+                    height: 300px;
+                    background: white;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: center;
+                    // flex-direction: column;
+                    h1 {
+                        width: 35%;
+                        font-size: 1.4rem;
+                        color: rgb(48, 47, 47);
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .carpetinstallationendhomequote {
+                        height: 100%;
+                        max-width: 55%;
+                        display: flex;
+                        align-content: flex-start;
+                        font-size: 2.6rem;
+                        font-family: 'Montserrat', sans-serif;
+                        // font-style: 
+                    }
+                }
+            }
+        }
+        .bruckup {
+            margin: 0 auto !important;
+            color: black;
+            width: 100% !important;
+            height: auto;
+            padding-bottom: 0px;
+            display: flex !important;
+            justify-content: space-between !important;
+            .contaflex {
+                height: auto;
+                display: flex !important;
+                // width: 440px;
+                // width: 100%;
+                margin: 0 auto !important;
+                padding-top: 20px;
+                flex-direction: column;
+                // flex-wrap: wrap;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                // align-items: baseline;
+                .items-list-wrapper-carpetinstallation1 {
+                    background: whitesmoke;
+                    position: relative;
+                    z-index: 600 !important;
+                    margin: 0 auto !important;
+                    // padding-left: 25px;
+                    // padding-right: 25px;
+                    width: 75vw;
+                    // height: auto !important;
+                    height: 650px;
+                    display: flex !important;
+                    flex-wrap: wrap !important;
+                    justify-content: center;
+                    padding-top: 75px;
+                    // padding-bottom: 35px;
+                    .item-card-square {
+                        background: whitesmoke;
+                        width: 360px;
+                        height: 350px;
+                        margin: 75px;
+                        margin-top: 5px;
+                        .item-card-info {
+                            width: 100%;
+                            // height: 350px;
+                            h1 {
+                                color: rgba(0, 172, 172, 0.658);
+                            }
+                            h4 {
+                                font-weight: lighter !important;
+                            }
+                        }
+                        .item-card-container-carpetinstallation {
+                            height: 350px;
+                            img {
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1 {
+            box-sizing: border-box !important;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center !important;
+            padding-bottom: 20px;
+            z-index: 500;
+            color: rgb(44, 52, 88);
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.carpetinstallationendcont {
+    margin: 0 auto;
+    width: 65%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 45px;
+    .carpetinstallationleftp {
+        border: 1px solid red !important;
+        margin: 0px;
+        border-radius: 50% !important;
+        padding: 0px;
+        width: 275px !important;
+        height: 275px !important;
+    }
+    div {
+        width: 60%;
+        padding: 25px;
+        h2 {
+            margin: 0px;
+            display: flex;
+            // justify-content: flex-start !important;
+            align-items: flex-start;
+            font-weight: lighter;
+        }
+        p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+        li {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            ul {
+                // border-radius: 7px;
+                color: white;
+                background: rgb(0, 172, 172);
+                height: auto;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                margin: 20px;
+                font-size: 1.4rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+            ul:first-of-type {
+                color: rgb(0, 172, 172) !important;
+                background: white !important;
+                border: 1.4px solid black;
+            }
+        }
+    }
+}
+
+.carpetinstallationfamilyimg {
+    width: 75%;
+    height: 650px;
+    // overflow: hidden;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    .carpetinstallationfamilyimgimg {
+        width: 100%;
+        height: auto;
+        background-image: url("./images/familyroom.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 80%;
+        .encasingright {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 25px;
+            li {
+                z-index: 899!important;
+                width: 450px;
+                max-height: auto;
+                height: 650px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 172, 172, 0.658);
+                ul {
+                    color: white;
+                    font-size: 1.3rem;
+                    width: 200px;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
         }
     }
 }

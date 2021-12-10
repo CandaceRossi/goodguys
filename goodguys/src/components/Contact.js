@@ -43,15 +43,15 @@ function Contact() {
                                 </div>
                                 <div className="flexin">
                                 <div className="flexinmedia">
-                                   <img src={fbicon} alt="fb-social-media"/>
-                                   <img src={twittericon} alt="twitter-social-media"/>
-                                   <img src={instagramicon} alt="ig-social-media"/>
+                                   <img src={fbicon} style={{width: "45px", height: "45px"}} alt="fb-social-media"/>
+                                   <img src={twittericon} style={{width: "45px", height: "45px"}} alt="twitter-social-media"/>
+                                   <img src={instagramicon} style={{width: "45px", height: "45px"}} alt="ig-social-media"/>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                            <h3>Please complete the information below and we'll promptly follow up with more detaile service information</h3>
+                            <div className="contbottom">
                           
+                            <h3>Please complete the information below and we'll promptly follow up with more detaile service information</h3>
                            <div className="formcontainer">
                             <form action="/actionpage">
                                 <div className="row">

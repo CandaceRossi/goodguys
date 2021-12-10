@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavDropdown  } from "react-bootstrap";
+import DrawerToggleButton from "./SideDrawer/DrawerToggleButton";
+import logo from "../images/logo.png"
 
-const NavbarComp = () => {
+const NavbarComp = (props) => {
    const [show, setShow] = useState(false);
     const showDropdown = (e) => {
         setShow(!show);
@@ -10,9 +12,19 @@ const NavbarComp = () => {
         setShow(false);
     }
 
+
+    
   return (
+    <>
+     <div className="toolbartogglebutton">
+                        <DrawerToggleButton click={props.click}/>
+                    </div> 
     <div className="nav">
       <Navbar>
+       {/* <a href="/" className="snortnav">
+                           <img className="logoimg"  src={logo} alt="logo"/>
+                             </a>
+                              <div className="spacer" /> */}
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/Contact">Contact</Nav.Link>
          {/* <NavDropdown title="Cleaning Specialties" className="basic-nav-dropdown"
@@ -37,6 +49,7 @@ const NavbarComp = () => {
         <Nav.Link href="/Reviews">Reviews</Nav.Link>
       </Navbar>
     </div>
+    </>
   );
 };
 
