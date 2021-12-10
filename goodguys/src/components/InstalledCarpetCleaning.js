@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import couplecarpetstairs from "../images/couplecarpetstairs.jpg";
+import arearug3 from "../images/arearug3.jpg";
 import colorfulruglivingroom from "../images/colorfulruglivingroom.jpg";
 import familyroom from "../images/familyroom.jpg";
 import Aos from "aos";
@@ -22,9 +22,6 @@ function InstalledCarpetCleaning() {
       </div>
         <div className="brickdownchitown">
           <div className="brickup">
-            <div className="brickup1">
-              <h1>Year-Round Savings</h1>
-            </div>
            
             <div className="bruckup">
                 <div className="contaflex">
@@ -36,7 +33,7 @@ function InstalledCarpetCleaning() {
               
                  <img
                   className="item-card-image-square"
-                  src={couplecarpetstairs} alt=""
+                  src={arearug3} alt=""
                 /> 
               
              
@@ -83,7 +80,7 @@ function InstalledCarpetCleaning() {
        <div className="items-list-wrapper-installedcarpet">
       <div className="installedcarpetendcont">
                    
-       <img src={couplecarpetstairs} style={{width: "275px", height: "275px", borderRadius: "50%"}} alt="" className="installedcarpetleftp2" />
+       <img src={arearug3} style={{width: "275px", height: "275px", borderRadius: "50%"}} alt="" className="installedcarpetleftp2" />
        <div>
        <h2>Receive a 20% discount when you purchase a monthly pickup and delivery cleaning service for your area rugs.</h2>
        <p>For questions or to schedule an appointment, call (206) 782-2268 or use our online scheduling form to request an appointment.</p>

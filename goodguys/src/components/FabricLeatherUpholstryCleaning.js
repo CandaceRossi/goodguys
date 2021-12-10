@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import couplecarpetstairs from "../images/couplecarpetstairs.jpg";
+import arearug3 from "../images/arearug3.jpg";
 import colorfulruglivingroom from "../images/colorfulruglivingroom.jpg";
 import familyroom from "../images/familyroom.jpg";
 import Aos from "aos";
@@ -22,26 +22,30 @@ function FabricLeatherUpholstryCleaning() {
       </div>
         <div className="brickdownchitown">
           <div className="brickup">
-            <div className="brickup1">
-              <h1>Year-Round Savings</h1>
-            </div>
+             
             <div className="bruckup">
                 <div className="contaflex">
-                  <div className="items-list-wrapper-save">
+                  <div className="items-list-wrapper-fabricleather1">
                     <div className="itemdiv">
-                      <p>We're committed to keeping down the cost of "Keeping Up Appearances."</p></div>
+                      <p>"We're committed to keeping down the cost of "Keeping Up Appearances."</p>
+                      </div>
                     <div className="item-card-square" >
-            <div className="item-card-container-save">
+             {/* <div className="item-card-container-save">
               
-                <img
+                 <img
                   className="item-card-image-square"
-                  src={couplecarpetstairs} alt=""
-                />
+                  src={arearug3} alt=""
+                /> 
+              
              
-            </div>
+            </div>  */}
 
             <div className="item-card-info">
-              <p>Bring your area rugs and upholstered furniture to us for service and receive a 20% discount.  This offer is available at both our Seattle and Bellevue locations.</p>
+            <h1>Fabric & Leather Upholstry Cleaning</h1>
+              <h4>We offer in-home service for your care-sensitive and heavily soiled fabric upholstery.  
+
+Our experts also thoroughly clean your leather upholstery to remove soil, apply a matching color to make scratches less noticeable, and perform a thorough conditioning to prevent cracking and restore its appearance.
+</h4>
               <button
               
                 className="md-button shop-button"
@@ -51,36 +55,47 @@ function FabricLeatherUpholstryCleaning() {
             </div>
           </div>
         <div className="item-card-square">
-          <div className="item-card-container-save">
+          <div className="item-card-container-fabricleather">
             <img
                   className="item-card-image-square"
                  src={colorfulruglivingroom} alt=""
                 />
             </div>
-            <div className="item-card-info">
-              <p>Our experienced cleaning technicians are happy to work around your furnishings and only clean the carpet traffic areas that need attention. As the need for furniture moving is reduced, we pass the savings along to you.</p>
-              <p>Enjoy your enhanced carpet appearance and a healthier indoor environment.</p>
-              <button
-              
-                className="md-button shop-button"
-              >
-               Get Great Savings!
-              </button>
-            </div>
+            {/* <div className="item-card-info">
+            </div> */}
           </div>
         </div>                    
       </div>
     </div>
+
+ <div className="brickup1">
+          <div className="fabricleatherendhome">
+    <h1>
+    <span className="fabricleatherendhomequote">"</span>
+    Good guys know how to do the job! But of course that's what they're known for.</h1>
+    <h1>
+    <span className="fabricleatherendhomequote">"</span>
+    Walked into the house and the cleaned rug was breathtaking! Looked as new as the day we bought it!</h1>
+    </div>
+            </div>
+
+       <div className="items-list-wrapper-fabricleather">
       <div className="fabricleatherendcont">
-       <p className="fabricleatherleftp">SPECIAL OFFER</p>
-       <div><h1>Special Offer</h1>
-       <p>Special savings for our valued clients</p>
-       <li><ul>$40 off <br/> <span>orders over $275</span></ul>
-       <ul>$85 off <br/> <span>orders over $500</span></ul>
-       <ul>$200 off <br/> <span>orders over $1,000</span></ul></li></div>
-      </div>           
+                   
+       <img src={arearug3} style={{width: "275px", height: "275px", borderRadius: "50%"}} alt="" className="fabricleatherleftp2" />
+       <div>
+       <h2>Receive a 20% discount when you purchase a monthly pickup and delivery cleaning service for your area rugs.</h2>
+       <p>For questions or to schedule an appointment, call (206) 782-2268 or use our online scheduling form to request an appointment.</p>
+       <li><ul>Schedule Now</ul>
+       <ul>Why GoodGuys?</ul>
+       </li></div>
+      </div>   
+      </div>        
   </div>
   </div>
+
+
+  
   <div className="fabricleatherfamilyimg">
   <div className="fabricleatherfamilyimgimg"> 
   <div className="encasingright">
