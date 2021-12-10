@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import logo4 from "../images/logo4.png"
 
 
 export default class TopNavComp extends Component {
@@ -38,13 +39,17 @@ export default class TopNavComp extends Component {
     render() {
         return (
             <div>
+           
                 <nav className={classnames({
                     "topNav--hidden": !this.state.visible
                 }, "topNav")}>
                  
                     <div className="navsort">
-                   
-                        <p>Sign Up For Our Newsletter</p>
+                      <a href="/" className="snortnav">
+                           <img className="logoimg"  src={logo4} alt="logo"/>
+                             </a>
+                              <div className="spacer" />
+                        {/* <p>Sign Up For Our Newsletter</p> */}
                         <p>Call (773)386-6868 </p>
                         <div><p>Schedule Now!</p></div>
                     </div>
@@ -54,4 +59,3 @@ export default class TopNavComp extends Component {
     }
 }
 
- // "react-bootstrap": "^1.4.0",
