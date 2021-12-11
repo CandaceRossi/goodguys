@@ -9,15 +9,16 @@ import Home from "./components/Home";
 import Reviews from "./components/Reviews";
 import Savings from "./components/Savings";
 import WhyGoodGuys from "./components/WhyGoodGuys";
-import Data from "./components/Data.js";
-import CardCont from "./components/CardCont.js";
-import Card from "./components/Card.js";
+// import Data from "./components/Data.js";
+// import CardCont from "./components/CardCont.js";
+// import Card from "./components/Card.js";
 import AreaRugCleaning from "./components/AreaRugCleaning.js";
 import InstalledCarpetCleaning from "./components/InstalledCarpetCleaning.js";
 import FabricLeatherUpholstryCleaning from "./components/FabricLeatherUpholstryCleaning.js";
 import CarpetInstallation from "./components/CarpetInstallation.js";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import Footer from "./components/Footer.js";
 
 function App() {
   // const [dataitems] = useState(Data);
@@ -83,6 +84,7 @@ function App() {
                 <Route exact path="/Savings" component={Savings} />
                  <Route exact path="/Reviews" component={Reviews} /> 
         </Switch>
+        <Footer />
         </div>
     // </div>
   );
