@@ -27,7 +27,7 @@ function EndHomeCont() {
             <ul>Custom Carpet Services</ul>
             <ul>Your Satisfaction Guaranteed</ul>
         </li>
-        <button>About Our Company</button>
+        <button href="/WhyGoodGuys">About Our Company</button>
         </div>
         </div>
     </div>
